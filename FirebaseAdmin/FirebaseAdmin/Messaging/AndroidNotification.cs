@@ -357,10 +357,11 @@ namespace FirebaseAdmin.Messaging
             }
         }
 
-        /// <summary>
-        /// Gets or sets the string representation of the <see cref="EventTimestamp"/> property.
-        /// </summary>
-        [JsonProperty("event_time")]
+         /// <summary>
+         /// Gets or sets the string representation of the <see cref="EventTimestamp"/> property.
+         /// </summary>
+         /// [JsonProperty("event_time")]
+        [JsonIgnore]
         private string EventTimeString
         {
             get
